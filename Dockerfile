@@ -13,8 +13,11 @@ RUN npm install
 # Copia el resto de los archivos al contenedor
 COPY . .
 
+# Instala nodemon globalmente
+RUN npm install -g nodemon
+
 # Expone el puerto 3000
 EXPOSE 3000
 
-# Inicia la aplicación al ejecutar el contenedor
-CMD [ "npm", "start" ]
+# Inicia la aplicación con nodemon al ejecutar el contenedor
+CMD ["nodemon", "index.js"]
