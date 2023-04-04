@@ -1,0 +1,18 @@
+version: "3"
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    restart: always
+    ports:
+      - "9042:9042"
+  node-app:
+    build: .
+    container_name: node-app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - CASSANDRA_CONTACT_POINTS=cassandra
+    depends_on:
+      - cassandra
