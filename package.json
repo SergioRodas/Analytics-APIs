@@ -1,0 +1,29 @@
+{
+  "name": "analytics-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioRodas/Analytics-APIs.git"
+  },
+  "author": "Sergio Rodas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioRodas/Analytics-APIs/issues"
+  },
+  "homepage": "https://github.com/SergioRodas/Analytics-APIs#readme",
+  "dependencies": {
+    "cassandra-driver": "^4.6.4",
+    "express": "^4.18.2",
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
