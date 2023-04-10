@@ -20,4 +20,4 @@ RUN npm install -g nodemon
 EXPOSE 3000
 
 # Inicia la aplicación con nodemon al ejecutar el contenedor
-CMD ["nodemon", "index.js"]
+CMD ["nodemon", "src/app.js"]
